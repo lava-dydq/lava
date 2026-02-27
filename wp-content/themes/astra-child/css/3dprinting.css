@@ -1,0 +1,1279 @@
+/* 重写滚动条 start */
+*::-webkit-scrollbar{
+	-webkit-appearance: none;
+}
+*::-webkit-scrollbar:vertical{
+	width: 10px;
+}
+*::-webkit-scrollbar:horizontal{
+	height: 10px;
+}
+*::-webkit-scrollbar-thumb{
+	border-radius: 8px;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+*::-webkit-scrollbar-track{
+	border-radius: 8px;
+	background-color: #f5f5f5;
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+}
+*::-webkit-scrollbar-button{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+*::-webkit-scrollbar-corner{
+	background-color: rgba(0, 0, 0, 1.0);
+}
+/* 重写滚动条 end */
+
+/* 上传文件页面中上传文件和显示模型的样式 */
+.file-unit-text-label{
+	margin-right: 10px;
+	font-weight: 600;
+}
+.file-unit-label{
+	position: relative;
+	border: 1px solid #dbdbdb;
+	padding: 0 10px;
+	cursor: pointer;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29px;
+}
+.file-unit-label.checked{
+	color: #1871ff;
+	border: 1px solid #1871ff;
+	background: #f7fbff;
+}
+.file-unit-label.checked i{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	right: -1px;
+	bottom: -1px;
+	background: url(../choose_icon.svg) 100% 100% no-repeat;
+	display: inline-block;
+	border-radius: 2px;
+}
+.file-unit-label input{
+	display: none;
+}
+.file-unit-check-wrap{
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: flex-end;
+}
+
+.file-unit-option{
+	display: flex;
+	align-items: center;
+}
+
+.file-unit-option label:first-child{
+	margin-right: 10px;
+}
+.files_stl{
+	display: none;
+}
+.wp-block-columns.has-background {
+    padding: 1.5em 1.5em;
+}
+.flies-cover {
+	position: relative;
+	height: 300px;
+	width: 100%;
+	padding: 1em;
+	box-sizing: border-box;
+	border-bottom: 1px solid #dddddd;
+	margin-bottom: 25px;
+	overflow: auto;
+}
+.flies-cover::after{
+	content: "Drag Files Here";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ddd;
+	font-size: 25px;
+}
+.file_name{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.delete-link{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.preview-link{
+	cursor: pointer;
+	line-height: 1;
+}
+.file-box .preview-link{
+	min-width: 84px;
+	max-width: 84px;
+	width: 84px;
+	max-height: 61px;
+	overflow: hidden;
+}
+.cnc-file-wrap .preview-link{
+	/*min-width: 84px;*/
+	/*max-width: 84px;*/
+	/*width: 84px;*/
+	max-height: 61px;
+	overflow: hidden;
+}
+.pi-file-wrap .preview-link{
+	/*min-width: 84px;*/
+	/*max-width: 84px;*/
+	/*width: 84px;*/
+	max-height: 61px;
+	overflow: hidden;
+}
+.flex-justify-content-end{
+	justify-content: flex-end;
+}
+.button-outline{
+	border: 1px solid #888;
+}
+.clear-all-button{
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 20px;
+	color: #b3bbbe;
+	cursor: pointer;
+	width: 150px;
+    margin-right: 20px;
+}
+.clear-all-button{
+	color: #dd3857;
+	border-color: #dd3857;
+}
+.button-fill{
+	border: 2px solid #ED910E;
+	background: #ED910E;
+}
+.upload-button{
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 0px;
+	color: #fff;
+	cursor: pointer;
+}
+.upload-button:hover{
+	background: #F7A93A;
+	border-color: #F7A93A;
+}
+.stl-only{
+	color: #7A7A7A;
+	margin: 10px 0 !important;
+}
+.flie-data-item{
+	display: flex;
+	justify-content: space-between;
+}
+.progress_sitelogo{
+	position: relative;
+}
+#progress{
+	display: none;
+}
+#bar{
+	width: 100%;
+	height: 25px;
+}
+#percent{
+	height: 25px;
+	color: #0b3c51;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+/* 上传文件页面中材料部分的样式 */
+.box-material{
+	border-bottom: 1px solid #cdcdcd;
+}
+.box-material .material-price{
+	/* color: #dd3857; */
+}
+.add-to-cart-button{
+	cursor: pointer;
+}
+.add-to-cart-button:hover svg path{
+	fill: #008B00;
+}
+.show-files-arrow{
+	color: #000000;
+	cursor: pointer;
+}
+.position-relative{
+	position: relative;
+}
+.box-material{
+	font-size: 13px;
+}
+.box-material:hover{
+	/* font-weight: bold; */
+	/* background: #eeeeee; */
+}
+.box-material .material_td_heading {
+	color: #4081e4;
+	text-transform: uppercase;
+	padding-right: 5px;
+}
+.col-quantity{
+	display: flex;
+	align-items: center;
+	width: 80px;
+	padding-left: 20px;
+	padding-right: 20px;
+	justify-content: center;
+}
+.bt-minus, .bt-plus{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.col-quantity .plus-minus{
+	width: 45px;
+	height: 56px;
+	text-align: center;
+	border: none;
+	background: #fff;
+	outline: none;
+	margin: 0 4px;
+	padding: 0;
+}
+.file-box a.preview-link {
+	color: #1f7fa8;
+}
+.dublicateclick {
+	margin-right: 15px;
+	cursor: pointer;
+}
+.multiplecolor select{
+	text-transform: uppercase;
+	border: 2px solid #888888;
+	font-size: 12px;
+	padding: 3px 16px;
+}
+.file-box .col-price {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+}
+.remove_icon{
+	cursor: pointer;
+}
+
+/* 上传文件页面中蒙层框的样式 */
+.modal{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+}
+.modal-dialog{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+}
+.modal-content{
+	display: flex;
+	padding: 20px;
+	background: #fff;
+}
+.close-modal{
+	cursor: pointer;
+}
+
+.upload-3d-model{
+	border: none;
+	background-color: #df9d06;
+	padding: 10px 30px;
+	font-weight: 600;
+	color: #ffffff;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+/*.upload-3d-model i,.upload-button i{*/
+/*	padding-right: 10px;*/
+/*}*/
+
+#drop {
+    position: relative;
+    z-index: 888;
+}
+
+#dropbox {
+    z-index: 886;
+}
+
+#drop .drop {
+    width: 100%;
+    height: 400px;
+    border: 1px dashed #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 780
+}
+
+#dropbox p {
+    z-index: 777
+}
+
+#dropbox .wp-block-buttons {
+    z-index: 555
+}
+.drop-upload-placehoder{
+	text-transform: uppercase;
+    font-size: 25px;
+    color: #a6a6a6;
+    margin-bottom: 25px !important;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.drop-upload-note{
+	font-size: 12px;
+    color: #a6a6a6;
+    margin-bottom: 10px !important;
+}
+@media (min-width: 760px){
+	.custom-upload-h1{
+		font-size: 3.0rem !important;
+		font-weight: 600 !important;
+	}
+	.custom-upload-h2{
+		font-size: 3rem !important;
+		margin: 45px 0 65px !important;
+		letter-spacing: 4px;
+	}
+	.custom-upload-p{
+		margin-bottom: 64px !important;
+	}
+}
+.upload-page-notes{
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	margin: 60px 0px 30px;
+}
+@media (max-width: 760px){
+	.upload-page-notes{
+		grid-template-columns: repeat(2, 50%);
+	}
+}
+.upload-page-notes>div{
+	padding: 10px 30px;
+}
+.upload-page-notes>div{
+	font-size: 14px;
+}
+.upload-note-num{
+	color: #4081e4;
+	font-size: 20px;
+	font-weight: bold;
+	border: 2px solid #4081e4;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.upload-btn-clear-btn-container{
+
+}
+.file-preview-text{
+	position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: #bcbcbc;
+}
+.custom-group-inner-container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.materials-select-outer-container{
+	background: #ffffff;
+	padding: 10px 30px;
+	margin-left: calc( -50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+	width: 100vw;
+	z-index: 999;
+}
+.materials-select-outer-container-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	flex-wrap: wrap;
+	position: relative;
+}
+.full-screen-wrap{
+
+}
+.full-screen{
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+.minimize-screen{
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	display: none;
+}
+.materials-select-outer-container-header-text{
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: 600;
+}
+.order-alert-text{
+	color: #4081e4;
+}
+.our-service-name-wrap{
+	width: 100%;
+	overflow: auto;
+}
+.our-service-name{
+	width: 100%;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #cdcdcd;
+	padding: 20px;
+	background: #ffffff;
+	line-height: 1;
+	height: 80px;
+	overflow-x: clip;
+}
+.fa-angles-wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.fa-angles-wrap .open{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.fa-angles-wrap .close{
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
+.fa-angles-wrap img{
+	min-width: 60px;
+	background-color: #ffFFFF;
+}
+
+.file_name.active {
+	color: #4081e4;
+}
+.file_name.active svg path{
+	fill: #4081e4;
+}
+.file-info-wrap{
+	font-size: 12px;
+}
+.form_files{
+	display: none;
+}
+.format-support{
+	color: #aaa;
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 8px;
+}
+.upload-btn-file-info-contianer, .clear-all-file-unit-container{
+	display: flex;
+}
+.upload-btn-file-info-contianer{
+	margin-bottom: 20px;
+}
+.file-info-label{
+	color: #4081e4;
+}
+.upload-btn-wrap {
+    width: 150px;
+    margin-right: 20px;
+}
+.file-ation-wrap{
+	display: flex;
+	align-items: center;
+}
+
+/* 3d打印 */
+
+.printing-materials-select-outer-container{
+	/*width: 33.33%;*/
+	overflow: auto;
+	border-right: 4px solid #cdcdcd;
+}
+
+.materials-select-inner-container{
+	overflow: scroll;
+	height: 800px;
+	position: relative;
+	border-left: 1px solid #cdcdcd;
+}
+.material-box-desc-service{
+	font-weight: 600;
+	text-transform: uppercase;
+	background: #df9d06;
+	color: #ffffff;
+	font-size: 16px;
+	width: 92px;
+	padding: 0 8px;
+	margin-top: 13px;
+	text-align: center;
+}
+.material-box-head-price {
+
+}
+/*.material-part{*/
+	/*max-width: 84px;*/
+    /*width: 84px;*/
+    /*line-height: 1;*/
+/*}*/
+.fix-head {
+	background-color: #FFFFFF;
+	position: sticky;
+	top:0;
+	z-index:1;
+}
+
+.material-box-head-name{
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #cdcdcd;
+	padding: 20px;
+	font-weight: 600;
+}
+.material-wrap-process{
+	font-size: 28px;
+	font-weight: 600;
+}
+.material-box-head-properties{
+	display: flex;
+}
+.material-box-desc-properties a{
+	color: #140202;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1;
+}
+.printing-full-title{
+	display: none;
+}
+.fa-circle-question{
+	color: #4081e4;
+}
+.box-material-materiallist{
+	display: flex;
+	padding: 7px 20px;
+}
+.file-box{
+	padding: 7px 20px;
+	border-top: 1px solid #cdcdcd;
+}
+.material-box-head-leadtime{
+	padding-left: 20px;
+}
+.file-box-filelist{
+	display: flex;
+}
+
+.material-file-name{
+	display: flex;
+	align-items: center;
+	word-break: break-all;
+}
+.material-file-img img{
+	width: 61px;
+}
+.material-file-options-qty-wrap{
+	display: none;
+}
+.printing-select-color, .printing-select-lead-time{
+	display: flex;
+    align-items: center;
+}
+.material-file-select-wrap{
+	display: flex;
+	align-items: center;
+}
+
+.dublicate-delete-wrap{
+	display: flex;
+	justify-content: center;
+}
+.custom-column-width-1{
+	width: 80px;
+	min-width: 80px;
+	/*margin-right: 20px;*/
+	line-height: 1;
+}
+.custom-column-width-2{
+	display: flex;
+    align-items: center;
+    /*width: 130px;*/
+    /*min-width: 130px;*/
+    /*margin-right: 20px;*/
+}
+.material-item-overflow{
+	overflow: hidden;
+}
+/*.custom-column-width-3{*/
+/*	width: 110px;*/
+/*	min-width: 110px;*/
+/*	!*margin-right: 20px;*!*/
+/*}*/
+
+.custom-column-width-4{
+	width: 100px;
+	min-width: 100px;
+}
+
+.printing-material-process{
+	font-weight: bold;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+.material-box-desc-price{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 600;
+}
+.material-box-desc-leadtime{
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	font-weight: 600;
+}
+.color-down{
+	padding-left: 10px;
+	position: absolute;
+	top: 0;
+	right: 8px;
+}
+.color-option-wrap{
+	position: absolute;
+	left: -1px;
+	background: #fff;
+	z-index: 9;
+	border: 1px solid #ccc;
+	overflow: auto;
+	height: 26px;
+	width: 140px;
+}
+.printing-color{
+	white-space:nowrap;
+	overflow: hidden;
+}
+.printing-leadtime{
+	white-space:nowrap;
+	overflow: hidden;
+}
+.lead-time-option-wrap{
+	position: absolute;
+	left: -1px;
+	background: #fff;
+	z-index: 9;
+	border: 1px solid #ccc;
+	overflow: auto;
+	height: 76px;
+	width: 110px;
+}
+.material-box-desc-cart{
+	display: flex;
+	align-items: center;
+}
+/*.add-to-cart-warp{*/
+/*	position: relative;*/
+/*	margin-right: 40px;*/
+/*}*/
+.preview-link:hover, .bt-minus:hover, .bt-plus:hover, .dublicateclick:hover, .remove_icon:hover{
+	color: #4081e4;
+}
+.material-bottom-info-container{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 50px 0;
+	flex-wrap: wrap;
+}
+.material-bottom-info-total-price{
+	font-weight: 700;
+}
+.material-bottom-info-total-price-label{
+	color: #4081e4;
+}
+.material-bottom-info-cart{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #4081e4;
+	padding: 5px 30px;
+	margin-left: 40px;
+}
+.material-bottom-info-cart a{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.printing-abnormal-alert{
+	margin-right: 15px;
+	color: #ff9900;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+.abnormal-alert-tips{
+	position: absolute;
+	font-size: 12px;
+	line-height: 1.2;
+	width: 245px;
+    background: #fff;
+    padding: 10px;
+    top: -24px;
+    right: 18px;
+    display: none;
+}
+
+/* CNC */
+
+.cnc-materials-select-outer-container{
+	width: 33.33%;
+	overflow: auto;
+	border-right: 4px solid #cdcdcd;
+}
+.cnc-materials-select-inner-container{
+	overflow: scroll;
+	height: 800px;
+	min-width: 300px;
+	position: relative;
+}
+.wp-block-table{
+	display: flex;
+	/* justify-content: center; */
+	flex-direction: row;
+}
+.cnc-material-box-head-name{
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #cdcdcd;
+	padding: 20px;
+	font-weight: 600;
+}
+.cnc-box-material{
+	border-bottom: 1px solid #cdcdcd;
+}
+.cnc-box-material-materiallist{
+	display: flex;
+	padding: 7px 20px;
+}
+.cnc-file-wrap{
+	padding: 7px 20px;
+	border-top: 1px solid #cdcdcd;
+}
+.cnc-file-wrap-filelist{
+	display: flex;
+	font-size: 13px;
+}
+/*.custom-cnc-column-width-1{*/
+	/*width: 80px;*/
+	/*min-width: 80px;*/
+	/*margin-right: 20px;*/
+	/*line-height: 1;*/
+/*}*/
+/*.custom-cnc-column-width-2{*/
+/*	width: 130px;*/
+/*	min-width: 130px;*/
+/*	margin-right: 20px;*/
+/*}*/
+.custom-cnc-column-width-3{
+	width: 110px;
+	min-width: 110px;
+	margin-right: 20px;
+}
+.custom-cnc-column-width-4{
+	width: 100px;
+	min-width: 100px;
+}
+
+.cnc-material-box-head-price{
+
+}
+.cnc-material-box-desc-service{
+	font-weight: 600;
+	text-transform: uppercase;
+	background: #a52f59;
+	color: #ffffff;
+	font-size: 12px;
+	width: 120px;
+	padding: 0 8px;
+	margin: 20px 0 10px;
+}
+.cnc-material-box-head-material{
+	display: flex;
+}
+
+.cnc-material-title a{
+	color: #140202;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+}
+.cnc-material-fullname{
+	color: #140202;
+	font-weight: 600;
+	font-size: 13px;
+}
+.cnc-material-box-desc-properties{
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+}
+.cnc-select-finishing-name{
+	font-size: 12px;
+	word-break: break-all;
+	max-height: 61px;
+	overflow-y: auto;
+}
+.cnc-file-all-quantity{
+	font-size: 16px;
+}
+/*.cnc-material-box-desc-leadtime{*/
+/*	display: flex;*/
+/*	align-items: center;*/
+/*	font-weight: 600;*/
+/*	font-size: 13px;*/
+/*}*/
+.cnc-material-box-desc-price{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 600;
+}
+.cnc-material-box-desc-cart{
+	display: flex;
+	align-items: center;
+}
+.cnc-add-to-cart-warp{
+	position: relative;
+	margin-right: 40px;
+}
+.cnc-add-to-cart-button{
+	cursor: pointer;
+}
+.cnc-add-to-cart-button:hover svg path {
+	fill: #008B00;
+}
+.cnc-material-file-name{
+	display: flex;
+	align-items: center;
+	word-break: break-all;
+}
+/*.cnc-material-file-options-qty-wrap{*/
+/*	display: none;*/
+/*}*/
+.cnc-material-file-select-wrap{
+	display: flex;
+	align-items: center;
+}
+.cnc-file-quantity-wrap{
+	display: flex;
+	align-items: center;
+	width: 80px;
+	/*padding-left: 20px;*/
+}
+.cnc-flie-price-wrap{
+	display: flex;
+	align-items: center;
+}
+.cnc-bt-minus,.cnc-bt-plus{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.cnc-file-quantity{
+	width: 45px;
+	height: 56px !important;
+	text-align: center;
+	border: none !important;
+	background: #fff !important;
+	outline: none;
+	margin: 0 4px;
+	padding: 0 !important;
+}
+.cnc-file-dublicate-delete-wrap{
+	display: flex;
+	justify-content: center;
+}
+.cnc-file-dublicateclick{
+	margin-right: 15px;
+	cursor: pointer;
+}
+.cnc-file-remove{
+	cursor: pointer;
+}
+/*.select-finishing{*/
+/*	width: 139px;*/
+	/*padding-left: 20px;*/
+/*}*/
+.cnc-finish{
+	white-space: nowrap;
+	overflow: hidden;
+}
+.finishing-down, .lead-time-down{
+	padding-left: 10px;
+	position: absolute;
+	top: 0;
+	right: 8px;
+}
+.finishing-option-wrap{
+	position: absolute;
+	left: -1px;
+	background: #fff;
+	z-index: 9;
+	border: 1px solid #ccc;
+	overflow: auto;
+	height: 294px;
+	width: 300px;
+}
+.finishing-option-wrap{
+
+}
+.options-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.finishing_option_head {
+	font-weight: 600;
+	border-top: 1px solid #ccc;
+	padding: 0 5px;
+}
+.options-form label{
+	padding: 0px 20px;
+}
+.options-form label:hover{
+	background: rgb(204,255,204);
+}
+label.option-check{
+	background: rgb(204,255,204);
+}
+.cnc-abnormal-alert{
+	margin-right: 15px;
+	color: #ff9900;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.cn-add-to-cart-button {
+    cursor: pointer;
+}
+.cn-add-to-cart-button:hover svg path {
+	fill: #008B00;
+}
+
+
+/* 注塑 PLASTIC INJECTION MOLDING */
+
+.pi-materials-select-outer-container{
+	width: 38%;
+	overflow: auto;
+	border-right: 4px solid #cdcdcd;
+}
+.pi-materials-select-inner-container{
+	overflow: scroll;
+	height: 800px;
+	min-width: 320px;
+	position: relative;
+}
+
+.pi-material-box-head-name{
+	display: flex;
+	border-bottom: 1px solid #cdcdcd;
+	padding: 20px;
+	font-weight: 600;
+}
+.pi-box-material{
+	border-bottom: 1px solid #cdcdcd;
+}
+.pi-box-material-materiallist{
+	display: flex;
+	padding: 7px 20px;
+}
+.pi-file-wrap{
+	padding: 7px 20px;
+	border-top: 1px solid #cdcdcd;
+}
+.pi-file-wrap-filelist{
+	display: flex;
+	font-size: 13px;
+	justify-content: space-between;
+}
+.custom-pi-column-width-1{
+	/*width: 80px;*/
+	/*min-width: 80px;*/
+	/*margin-right: 20px;*/
+	line-height: 1;
+}
+.pi-finish{
+	white-space: nowrap;
+	overflow: hidden;
+}
+.custom-pi-column-width-2{
+	width: 130px;
+	min-width: 130px;
+	margin-right: 20px;
+}
+/*.custom-pi-column-width-3{*/
+/*	width: 110px;*/
+/*	min-width: 110px;*/
+/*	margin-right: 20px;*/
+/*}*/
+.custom-pi-column-width-4{
+	width: 100px;
+	min-width: 100px;
+}
+.pi-material-box-head-price{
+
+}
+.pi-material-box-desc-service{
+	font-weight: 600;
+	text-transform: uppercase;
+	background: #4081e4;
+	color: #ffffff;
+	font-size: 12px;
+	width: 190px;
+	padding: 0 8px;
+	margin: 20px 0 10px;
+}
+.pi-material-box-head-material{
+	display: flex;
+}
+
+
+.pi-material-title a{
+	color: #140202;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+}
+.pi-material-fullname{
+	color: #140202;
+	font-weight: 600;
+	font-size: 13px;
+}
+.pi-material-box-desc-properties{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pi-select-finish-name{
+	font-size: 12px;
+	word-break: break-all;
+	max-height: 61px;
+	overflow-y: auto;
+}
+.pi-files-all-qty{
+	font-size: 16px;
+}
+.pi-material-box-desc-leadtime{
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 13px;
+}
+.pi-material-box-desc-price{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 600;
+}
+.pi-material-box-desc-cart{
+	display: flex;
+	align-items: center;
+}
+.pi-add-to-cart-warp{
+	position: relative;
+	margin-right: 40px;
+}
+.pi-add-to-cart-button{
+	cursor: pointer;
+}
+.pi-add-to-cart-button:hover svg path {
+	fill: #008B00;
+}
+.pi-material-file-name{
+	display: flex;
+	align-items: center;
+	word-break: break-all;
+}
+.pi-material-file-select-wrap{
+	display: flex;
+	align-items: center;
+	width: 159px;
+}
+.pi-file-quantity-wrap{
+	display: flex;
+	align-items: center;
+	margin: 0 20px;
+	/*width: 180px;*/
+}
+.pi-flie-price-wrap{
+	display: none;
+}
+.pi-file-part-price-wrap{
+	display: flex;
+	align-items: center;
+	height: 28px;
+}
+.pi-file-mould-price-wrap{
+	display: flex;
+	align-items: center;
+	height: 28px;
+}
+.pi-mould-bt-minus,.pi-mould-bt-plus{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+/*.pi-file-mould-part-wrap{*/
+/*	display: none;*/
+/*}*/
+.pi-finish-qty-head{
+	display: flex;
+}
+.pi-mould-part-wrap, .pi-file-part-wrap{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.mould-quantity{
+	width: 51px;
+	height: 28px !important;
+	text-align: center;
+	border: none !important;
+	background: #fff !important;
+	outline: none;
+	margin: 0 4px;
+	padding: 0 !important;
+}
+.pi-file-quantity-label {
+	margin-right: 10px;
+}
+.pi-bt-minus,.pi-bt-plus{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.pi-file-quantity{
+	width: 65px;
+	height: 28px !important;
+	text-align: center;
+	border: none !important;
+	background: #fff !important;
+	outline: none;
+	margin: 0 4px;
+	padding: 0 !important;
+}
+.pi-file-dublicate-delete-wrap{
+	display: flex;
+	justify-content: center;
+}
+.pi-file-dublicateclick{
+	margin-right: 15px;
+	cursor: pointer;
+}
+.pi-file-remove{
+	cursor: pointer;
+}
+.select-options {
+	border: 1px solid #000;
+	padding: 0 23px 0 10px;
+	position: relative;
+	/*margin-left: 20px;*/
+}
+.select-lead-time{
+	width:100px;
+}
+.finishing-option-wrap{
+	width: 300px;
+}
+.option-wrap{
+	position: absolute;
+	left: -1px;
+	background: #fff;
+	z-index: 9;
+	border: 1px solid #ccc;
+	overflow: auto;
+}
+.options-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.finishing_option_head {
+	font-weight: 600;
+	border-top: 1px solid #ccc;
+	padding: 0 5px;
+}
+.options-form label{
+	padding: 0px 20px;
+}
+.pi-file-mould-quantity-wrap {
+	display: flex;
+	align-items: center;
+	margin: 0 20px;
+}
+.injection-abnormal-alert{
+	margin-right: 15px;
+	color: #ff9900;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}

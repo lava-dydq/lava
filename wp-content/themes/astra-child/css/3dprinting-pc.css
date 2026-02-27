@@ -1,0 +1,197 @@
+[class*='-box-head-name'] {
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex: 0 0 auto;
+}
+[class*='-box-head-name'] > div,
+[class*='-box-head-name'] > span {
+  flex: 0 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+[class*='-materials-select-outer-container'] {
+  flex: 0 0 auto;
+}
+[class*='-column-material'] {
+  width: 114px;
+}
+[class*='-column-unit'] {
+  width: 110px;
+}
+[class*='-column-price'] {
+  width: 110px;
+}
+[class*='-column-cart'] {
+  width: 185px;
+}
+[class*='-column-swatch'] {
+  width: 80px;
+}
+[class*='-column-price'],
+[class*='-column-unit'] {
+  text-align: center;
+  justify-content: center;
+}
+[class*='-column-qty'] {
+  width: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+[class*='-column-color'] {
+  width: 117px;
+}
+[class*='-column-lead_time'] {
+  width: 110px;
+}
+[class*='-column-process'] {
+  width: 90px;
+}
+[class*='-column-finish'] {
+  width: 170px;
+}
+.show-files-arrow-close-all {
+  flex: 0 0 auto;
+  width: 30px;
+  flex-direction: column;
+  display: flex;
+}
+.uni-price {
+  width: 110px;
+}
+.file-box-filelist {
+  display: flex;
+  align-items: center;
+}
+[class*='box-material-materiallist'] {
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+[class*='box-material-materiallist'] div,
+[class*='box-material-materiallist'] span {
+  flex: 0 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+[class*='box-material-materiallist'] .cnc-material-box-desc-thumbnail {
+  width: 80px !important;
+  min-width: 80px !important;
+}
+[class*='box-material-materiallist'] .material-part a {
+  color: #140202;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+}
+.pi-materials-select-outer-container .pi-column-qty {
+  width: 170px;
+}
+.pi-materials-select-outer-container .pi-column-finish {
+  width: 170px;
+}
+.file-box-filelist > div,
+.file-box-filelist > span {
+  flex: 0 0 auto;
+}
+.file-box-filelist {
+  justify-content: space-between;
+}
+.file-box-filelist .col-quantity {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.file-box-filelist .file-ation-wrap {
+  width: 180px;
+}
+.pi-file-wrap-filelist,
+.cnc-file-wrap-filelist {
+  align-items: center;
+  justify-content: space-between;
+}
+.pi-file-wrap-filelist > div,
+.cnc-file-wrap-filelist > div {
+  flex: 0 0 auto;
+}
+.pi-file-wrap-filelist .pi-material-file-name,
+.cnc-file-wrap-filelist .pi-material-file-name {
+  flex: 4;
+  overflow: unset !important;
+}
+.pi-file-wrap-filelist .cnc-material-file-name,
+.cnc-file-wrap-filelist .cnc-material-file-name {
+  flex: 3;
+  overflow: unset !important;
+}
+.pi-file-wrap-filelist .cnc-flie-price-wrap:first-child,
+.cnc-file-wrap-filelist .cnc-flie-price-wrap:first-child {
+  flex: 2;
+}
+.pi-file-wrap-filelist .cnc-flie-price-wrap .select-options,
+.cnc-file-wrap-filelist .cnc-flie-price-wrap .select-options,
+.pi-file-wrap-filelist .cnc-material-file-select-wrap .select-options,
+.cnc-file-wrap-filelist .cnc-material-file-select-wrap .select-options {
+  margin: 0;
+}
+.pi-file-wrap-filelist .cnc-flie-price-wrap .select-background-color,
+.cnc-file-wrap-filelist .cnc-flie-price-wrap .select-background-color,
+.pi-file-wrap-filelist .cnc-material-file-select-wrap .select-background-color,
+.cnc-file-wrap-filelist .cnc-material-file-select-wrap .select-background-color {
+  width: auto;
+  margin: 0 20px 0 0;
+}
+.ast-site-header-cart.ast-menu-cart-outline .ast-addon-cart-wrap {
+  border: none;
+}
+.upload-btn-clear-btn-container i {
+  padding-right: 10px;
+}
+.ma-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+.ma-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.one_zoom {
+  position: relative;
+}
+.one_zoom .maImg_wrapper {
+  position: absolute;
+  display: flex;
+  top: -100px;
+}
+.one_zoom .maImg_wrapper a {
+  display: contents;
+}
+.one_zoom .maImg_wrapper a > div {
+  display: flex;
+}
+.one_zoom .maImg_wrapper a .zoomPad > img,
+.one_zoom .maImg_wrapper a > img {
+  width: 260px;
+  height: 260px;
+  min-width: unset;
+  min-height: unset;
+  max-width: unset;
+}
+.material-bottom-info-cart i {
+  font-size: 25px;
+}
+.material-bottom-info-cart img {
+  width: 25px;
+}
+.our-service-name {
+  position: relative;
+}
+.our-service-name > .fa-angles-wrap {
+  padding-right: inherit;
+  right: 0;
+  position: absolute;
+}
+/*# sourceMappingURL=3dprinting-pc.css.map */

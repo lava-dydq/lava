@@ -1,0 +1,268 @@
+// 头部标题
+[class*='-box-head-name'] {
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex: 0 0 auto;
+
+  > div, > span {
+    flex: 0 0 auto;
+    text-align: center;
+    //margin: 0;
+    justify-content: center;
+  }
+}
+
+[class*='-materials-select-outer-container'] {
+  flex: 0 0 auto;
+}
+
+[class*='-column-material'] {
+  width: 84+15*2px;
+  //background-color: #0e7b17;
+}
+
+[class*='-column-unit'] {
+  width: 110px;
+  //background-color: orange;
+}
+
+[class*='-column-price'] {
+  width: 110px;
+  //background-color: pink;
+}
+
+[class*='-column-cart'] {
+  width: 185px;
+  //background-color: red;
+}
+
+[class*='-column-swatch'] {
+  width: 80px;
+  //background-color: palevioletred;
+}
+
+[class*='-column-price'], [class*='-column-unit'] {
+  text-align: center;
+  justify-content: center;
+}
+
+[class*='-column-qty'] {
+  width: 40+20+20px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  //background-color: #0d99d5;
+}
+
+[class*='-column-color'] {
+  width: 117px;
+  //background-color: #3c2861;
+}
+
+[class*='-column-lead_time'] {
+  width: 110px;
+  //background-color: #5c9049;
+}
+
+
+[class*='-column-process'] {
+  width: 90px;
+  //background-color: #b39ddb;
+}
+
+[class*='-column-finish'] {
+  width: 170px;
+  //background-color: #b39ddb;
+}
+
+.show-files-arrow-close-all {
+  flex: 0 0 auto;
+  width: 30px;
+  flex-direction: column;
+  display: flex;
+}
+
+.uni-price {
+  width: 110px;
+}
+
+.file-box-filelist {
+  display: flex;
+  align-items: center;
+}
+
+// 第一子栏
+[class*='box-material-materiallist'] {
+  //.box-material-materiallist, .pi-box-material-materiallist, . {
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+
+  div, span {
+    flex: 0 0 auto;
+    //width: auto !important;
+    //min-width: auto !important;
+    //margin: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  .cnc-material-box-desc-thumbnail {
+    width: 80px !important;
+    min-width: 80px !important;
+  }
+
+  .material-part {
+    a {
+      color: #140202;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1;
+    }
+  }
+}
+
+.pi-materials-select-outer-container {
+  .pi-column-qty {
+    width: 130+20+20px;
+  }
+
+  .pi-column-finish {
+    width: 170px
+  }
+}
+
+.file-box-filelist {
+  > div, > span {
+    flex: 0 0 auto;
+  }
+}
+
+.file-box-filelist {
+  justify-content: space-between;
+
+  .col-quantity {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .file-ation-wrap {
+    width: 180px;
+  }
+}
+
+// 上传文件后的子栏
+.pi-file-wrap-filelist, .cnc-file-wrap-filelist {
+  align-items: center;
+  justify-content: space-between;
+
+  > div {
+    flex: 0 0 auto;
+    //width: auto !important;
+    //min-width: auto !important;
+    //margin: 0;
+  }
+
+  .pi-material-file-name {
+    flex: 4;
+    overflow: unset !important;
+  }
+
+  .cnc-material-file-name {
+    flex: 3;
+    overflow: unset !important;
+  }
+
+  .cnc-flie-price-wrap:first-child {
+    flex: 2;
+  }
+
+  .cnc-flie-price-wrap, .cnc-material-file-select-wrap {
+    .select-options {
+      margin: 0;
+    }
+
+    .select-background-color {
+      width: auto;
+      margin: 0 20px 0 0;
+    }
+
+    .select-lead-time {
+      //width: auto;
+    }
+  }
+}
+
+// 去掉购物车边框
+.ast-site-header-cart.ast-menu-cart-outline .ast-addon-cart-wrap {
+  border: none;
+}
+
+.upload-btn-clear-btn-container {
+  i {
+    padding-right: 10px;
+  }
+}
+
+.ma-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.one_zoom {
+  position: relative;
+
+  .maImg_wrapper {
+    position: absolute;
+    display: flex;
+    top: -100px;
+
+    a {
+      display: contents;
+
+      > div {
+        display: flex;
+      }
+
+      .zoomPad > img, > img {
+        width: 260px;
+        height: 260px;
+        min-width: unset;
+        min-height: unset;
+        max-width: unset;
+      }
+    }
+
+  }
+}
+
+.material-bottom-info-cart {
+  i {
+    font-size: 25px;
+  }
+
+  img {
+    width: 25px;
+  }
+}
+
+.our-service-name {
+  position: relative;
+
+  > .fa-angles-wrap {
+    padding-right: inherit;
+    right: 0;
+    position: absolute;
+  }
+}

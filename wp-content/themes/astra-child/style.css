@@ -1,0 +1,213 @@
+/**
+Theme Name: Astra Child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+/* 清除focus-visible的样式 */
+input[type=email]:focus-visible, input[type=password]:focus-visible, input[type=reset]:focus-visible,
+input[type=search]:focus-visible, input[type=tel]:focus-visible, input[type=text]:focus-visible, 
+input[type=url]:focus-visible, select:focus-visible, textarea:focus-visible, canvas:focus-visible {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/* cart页面的材料属性的样式 */
+.color-a {
+    color: #1f7fa8;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+
+/* checkout 页面的样式 */
+@media (min-width: 922px){
+	.woocommerce.woocommerce-checkout form #customer_details.col2-set, 
+	.woocommerce-page.woocommerce-checkout form #customer_details.col2-set {
+	    width: 100% !important; 
+	    float: none !important;
+	}
+	.woocommerce.woocommerce-checkout form #customer_details.col2-set .woocommerce-billing-account-fields,
+	.woocommerce-page.woocommerce-checkout form #customer_details.col2-set .woocommerce-billing-account-fields{
+		width: 50%;
+	    float: left;
+	}
+	.woocommerce.woocommerce-checkout form #customer_details.col2-set .woocommerce-billing-fields, 
+	.woocommerce-page.woocommerce-checkout form #customer_details.col2-set .woocommerce-billing-fields {
+		width: 100%;
+	    float: none;
+	}
+	.woocommerce.woocommerce-checkout form #customer_details.col2-set .woocommerce-account-fields, 
+	.woocommerce-page.woocommerce-checkout form #customer_details.col2-set .woocommerce-account-fields {
+		width: 100%;
+	    float: none;
+	}
+	.woocommerce.woocommerce-checkout form #customer_details.col2-set .woocommerce-shipping-fields, 
+	.woocommerce-page.woocommerce-checkout form #customer_details.col2-set .woocommerce-shipping-fields {
+		width: 45%;
+	    float: right;
+	}
+	.woocommerce.woocommerce-checkout form #customer_details.col2-set .woocommerce-additional-fields, 
+	.woocommerce-page.woocommerce-checkout form #customer_details.col2-set .woocommerce-additional-fields {
+		width: 45%;
+	    float: right;
+	}
+	.woocommerce.woocommerce-checkout form #order_review, .woocommerce.woocommerce-checkout form #order_review_heading, 
+	.woocommerce-page.woocommerce-checkout form #order_review, .woocommerce-page.woocommerce-checkout form #order_review_heading {
+	    width: 100% !important;
+	    float: none !important;
+	}
+}
+textarea[name="order_comments"]{
+	min-height: 150px;
+}
+
+.order_checkout_total{
+	color: #dd3857;
+}
+.order_checkout_total del .woocommerce-Price-amount{
+	color: #0b3c51;
+}
+
+/* 清空购物车按钮样式 */
+.button-cart-footer{
+	float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+    background: #478caa;
+    border-radius: 35px;
+    margin: 20px 0;
+    height: 50px;
+}
+.button-cart-footer .emptyCart{
+	display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.button-cart-footer .emptyCart svg{
+	margin: 10px 10px 10px 0;
+}
+.button-cart-footer .front-cart-blank{
+	width: 10px;
+    height: 52px;
+    background: #fff;
+}
+.button-cart-footer .ast-cart-menu-wrap{
+	margin: 10px 0 10px 10px;
+}
+.button-cart-footer a{
+	color: #051b24;
+}
+
+/* 清空购物车的蒙层框的样式 */
+.emptycart{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+}
+.emptycart-modal-dialog{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+}
+.emptycart-modal-content{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background: #fff;
+}
+.emptycart-modal-footer{
+	display: flex;
+	justify-content: space-around;
+}
+
+/* 修改 wpforms 的提交按钮样式*/
+div.wpforms-container-full .wpforms-form input[type=submit], 
+div.wpforms-container-full .wpforms-form button[type=submit], 
+div.wpforms-container-full .wpforms-form .wpforms-page-button{
+    background: #2582AA !important;
+    color: #fff !important;
+    padding: 5px 25px !important;
+    border-radius: 50px !important;
+    border: 2px solid #2582AA !important;
+}
+
+
+/* 材料，工艺页面的列表样式 */
+.lava-block-columns{
+	display: flex;
+	flex-wrap: wrap;
+}
+@media (min-width: 782px){
+	.lava-block-columns .wp-block-column {
+	    flex-grow: 0 !important;
+	    margin: .625rem;
+	    min-width: calc(30% - 0.625rem * 2);
+	}
+}
+.lava-block-columns .wp-block-column{
+	background: #fff;
+	padding: 20px;
+}
+.lava-block-columns .wp-block-column:hover{
+	box-shadow: 0px 0px 33px -4px rgb(16 86 116 / 24%);
+}
+.lava-block-columns .wp-block-image{
+	display: flex;
+	justify-content: center;
+}
+.lava-block-columns .wp-block-image img {
+    height: 200px;
+    width: auto;
+}
+
+/* 修改单个页面的header*/
+.single .entry-header {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+/* 修改单个页面的评论*/
+.comments-area {
+    margin-bottom: 2em;
+}
+
+/*修改blog页面*/
+ .uagb-block-a57b8db0 .uagb-post__title {
+    padding-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.uagb-block-a57b8db0 .uagb-post__excerpt {
+    padding-bottom: 25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ast-header-button-1[data-section*="section-hb-button-"] .ast-builder-button-wrap .ast-custom-button {
+    padding-left: 10px!important;
+    padding-right: 10px!important;  
+}
+
+.uagb-block-a57b8db0 .uagb-post__inner-wrap .uagb-post__cta {
+    padding-top:10px;
+}
